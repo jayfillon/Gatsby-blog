@@ -19,3 +19,12 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+
+// What I've done so far is:
+/*
+  -> Download a Markdown Cheatsheet
+  -> Update plugin in gatsby-config to "resolve" markdown pages
+  -> Shows up in GraphiQL
+  -> Ended it off there.
+  */ 
