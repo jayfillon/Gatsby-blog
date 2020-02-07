@@ -1,9 +1,9 @@
 ---
-title: 'My First AMA'
-date: '2017-08-21'
-description: 'My first AMA :)'
+title: 'Why Code?'
+date: '2020-02-20'
+description: 'A specific video shown in my intro to Software Development course in BCIT that motivated me to code.'
 ---
 
-Thank you everyone who enjoyed the AMA! It was my first one and I'd love to do it again.
+A specific video shown in my intro to Software Development course in BCIT that motivated me to code.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DXJO3AraeMQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Dv7gLpW91DM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

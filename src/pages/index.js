@@ -1,20 +1,33 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+//Styled Components
+//could refactor into it's own folder structure for organization
+const BlogLink = styled(Link)`
+  text-decoration: none;
+`
+const BlogTitle = styled.h3`
+  margin-bottom: 20px;
+  color: rgb(110, 110, 110);
+`
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <div>
       <h1>Jericho's Thoughts</h1>
-      <h4>{data.allMarkdownRemark.totalCount}</h4>
+      <h2>{data.allMarkdownRemark.totalCount} total posts</h2>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
-          <span>
-            {node.frontmatter.title} - {node.frontmatter.date}
-          </span>
+          <BlogLink to={node.fields.slug}>
+            <BlogTitle>
+              {node.frontmatter.title} - {node.frontmatter.date}
+            </BlogTitle>
+          </BlogLink>
           <p>{node.excerpt}</p>
         </div>
       ))}
@@ -37,7 +50,7 @@ export const query = graphql`
             title
           }
           excerpt
-          fields{
+          fields {
             slug
           }
         }
